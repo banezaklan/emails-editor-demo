@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Emails Editor Demo</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="emails-editor.css">
+  </head>
+  <body>
+    <div >
+      <div id="emails-editor"></div>
+      <div id="emails-editor-2"></div>
+    </div>
+  </body>
+  <script src="emails-editor.js"></script>
+  <script>
+    const container = document.querySelector('#emails-editor');
+    const editor1 = new EmailsEditor.Main(container,{ sharedContentName: 'My Board ABC'})
+    const container2 = document.querySelector('#emails-editor-2');
+    const editor2 = new EmailsEditor.Main(container2,{ sharedContentName: 'My Board XYZ'});
+    // some code to control emails via library
+  </script>
+
+</html>
